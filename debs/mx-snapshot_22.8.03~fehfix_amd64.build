@@ -1,6 +1,6 @@
  dpkg-buildpackage -us -uc -ui -sa
 dpkg-buildpackage: info: source package mx-snapshot
-dpkg-buildpackage: info: source version 22.8.03
+dpkg-buildpackage: info: source version 22.8.03~fehfix
 dpkg-buildpackage: info: source distribution mx
 dpkg-buildpackage: info: source changed by fehlix <fehlix@mxlinux.org>
  dpkg-source --before-build .
@@ -10,14 +10,26 @@ dh clean --no-automatic-dbgsym --parallel
    debian/rules override_dh_auto_clean
 make[1]: Entering directory '/tmpdir/build/mx-snapshot'
 dh_auto_clean
+	make -j4 distclean
+make[2]: Entering directory '/tmpdir/build/mx-snapshot'
+rm -f qrc_images.cpp
+rm -f moc_predefs.h
+rm -f moc_mainwindow.cpp moc_cmd.cpp moc_batchprocessing.cpp moc_work.cpp
+rm -f ui_mainwindow.h
+rm -f main.o mainwindow.o about.o cmd.o settings.o batchprocessing.o work.o qrc_images.o moc_mainwindow.o moc_cmd.o moc_batchprocessing.o moc_work.o
+rm -f *~ core *.core
+rm -f mx-snapshot 
+rm -f .qmake.stash
+rm -f Makefile
+make[2]: Leaving directory '/tmpdir/build/mx-snapshot'
 rm -f src/translations/*.qm
 make[1]: Leaving directory '/tmpdir/build/mx-snapshot'
    dh_autoreconf_clean -O--no-automatic-dbgsym -O--parallel
    dh_clean -O--no-automatic-dbgsym -O--parallel
  dpkg-source -b .
 dpkg-source: info: using source format '3.0 (native)'
-dpkg-source: info: building mx-snapshot in mx-snapshot_22.8.03.tar.xz
-dpkg-source: info: building mx-snapshot in mx-snapshot_22.8.03.dsc
+dpkg-source: info: building mx-snapshot in mx-snapshot_22.8.03~fehfix.tar.xz
+dpkg-source: info: building mx-snapshot in mx-snapshot_22.8.03~fehfix.dsc
  debian/rules build
 dh build --no-automatic-dbgsym --parallel 
    dh_update_autotools_config -O--no-automatic-dbgsym -O--parallel
@@ -200,8 +212,6 @@ g++ -c -pipe -g -O2 -ffile-prefix-map=/tmpdir/build/mx-snapshot=. -fstack-protec
 /usr/lib/qt5/bin/moc -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --include /tmpdir/build/mx-snapshot/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/tmpdir/build/mx-snapshot -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/10 -I/usr/include/x86_64-linux-gnu/c++/10 -I/usr/include/c++/10/backward -I/usr/lib/gcc/x86_64-linux-gnu/10/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include cmd.h -o moc_cmd.cpp
 /usr/lib/qt5/bin/moc -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --include /tmpdir/build/mx-snapshot/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/tmpdir/build/mx-snapshot -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/10 -I/usr/include/x86_64-linux-gnu/c++/10 -I/usr/include/c++/10/backward -I/usr/lib/gcc/x86_64-linux-gnu/10/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include batchprocessing.h -o moc_batchprocessing.cpp
 /usr/lib/qt5/bin/moc -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --include /tmpdir/build/mx-snapshot/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/tmpdir/build/mx-snapshot -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/10 -I/usr/include/x86_64-linux-gnu/c++/10 -I/usr/include/c++/10/backward -I/usr/lib/gcc/x86_64-linux-gnu/10/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include work.h -o moc_work.cpp
-g++ -c -pipe -g -O2 -ffile-prefix-map=/tmpdir/build/mx-snapshot=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -Wall -Wextra -D_REENTRANT -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -o moc_mainwindow.o moc_mainwindow.cpp
-g++ -c -pipe -g -O2 -ffile-prefix-map=/tmpdir/build/mx-snapshot=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -Wall -Wextra -D_REENTRANT -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -o moc_cmd.o moc_cmd.cpp
 work.cpp: In member function ‘void Work::cleanUp()’:
 work.cpp:87:11: warning: ignoring return value of ‘int system(const char*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
    87 |     system("sync");
@@ -225,6 +235,8 @@ work.cpp:272:15: warning: ignoring return value of ‘int system(const char*)’
 work.cpp:273:15: warning: ignoring return value of ‘int system(const char*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
   273 |         system("chown $(logname):$(logname) \"" + settings->snapshot_dir.toUtf8() + "/" + filename.toUtf8() + ".sha512\"");
       |         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+g++ -c -pipe -g -O2 -ffile-prefix-map=/tmpdir/build/mx-snapshot=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -Wall -Wextra -D_REENTRANT -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -o moc_mainwindow.o moc_mainwindow.cpp
+g++ -c -pipe -g -O2 -ffile-prefix-map=/tmpdir/build/mx-snapshot=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -Wall -Wextra -D_REENTRANT -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -o moc_cmd.o moc_cmd.cpp
 g++ -c -pipe -g -O2 -ffile-prefix-map=/tmpdir/build/mx-snapshot=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -Wall -Wextra -D_REENTRANT -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -o moc_batchprocessing.o moc_batchprocessing.cpp
 g++ -c -pipe -g -O2 -ffile-prefix-map=/tmpdir/build/mx-snapshot=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -Wall -Wextra -D_REENTRANT -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -o moc_work.o moc_work.cpp
 g++ -Wl,-z,relro -o mx-snapshot main.o mainwindow.o about.o cmd.o settings.o batchprocessing.o work.o qrc_images.o moc_mainwindow.o moc_cmd.o moc_batchprocessing.o moc_work.o   /usr/lib/x86_64-linux-gnu/libQt5Widgets.so /usr/lib/x86_64-linux-gnu/libQt5Gui.so /usr/lib/x86_64-linux-gnu/libQt5Core.so -lGL -lpthread   
@@ -261,20 +273,20 @@ make[1]: Leaving directory '/tmpdir/build/mx-snapshot'
    dh_gencontrol -O--no-automatic-dbgsym -O--parallel
    dh_md5sums -O--no-automatic-dbgsym -O--parallel
    dh_builddeb -O--no-automatic-dbgsym -O--parallel
-dpkg-deb: building package 'mx-snapshot' in '../mx-snapshot_22.8.03_amd64.deb'.
+dpkg-deb: building package 'mx-snapshot' in '../mx-snapshot_22.8.03~fehfix_amd64.deb'.
  dpkg-genbuildinfo
- dpkg-genchanges -sa >../mx-snapshot_22.8.03_amd64.changes
+ dpkg-genchanges -sa >../mx-snapshot_22.8.03~fehfix_amd64.changes
 dpkg-genchanges: info: including full source code in upload
  dpkg-source --after-build .
 dpkg-buildpackage: info: full upload; Debian-native package (full source is included)
 Now signing changes and any dsc files...
- signfile dsc mx-snapshot_22.8.03.dsc fehlix <fehlix@mxlinux.org>
+ signfile dsc mx-snapshot_22.8.03~fehfix.dsc fehlix <fehlix@mxlinux.org>
 
- fixup_buildinfo mx-snapshot_22.8.03.dsc mx-snapshot_22.8.03_amd64.buildinfo
- signfile buildinfo mx-snapshot_22.8.03_amd64.buildinfo fehlix <fehlix@mxlinux.org>
+ fixup_buildinfo mx-snapshot_22.8.03~fehfix.dsc mx-snapshot_22.8.03~fehfix_amd64.buildinfo
+ signfile buildinfo mx-snapshot_22.8.03~fehfix_amd64.buildinfo fehlix <fehlix@mxlinux.org>
 
- fixup_changes dsc mx-snapshot_22.8.03.dsc mx-snapshot_22.8.03_amd64.changes
- fixup_changes buildinfo mx-snapshot_22.8.03_amd64.buildinfo mx-snapshot_22.8.03_amd64.changes
- signfile changes mx-snapshot_22.8.03_amd64.changes fehlix <fehlix@mxlinux.org>
+ fixup_changes dsc mx-snapshot_22.8.03~fehfix.dsc mx-snapshot_22.8.03~fehfix_amd64.changes
+ fixup_changes buildinfo mx-snapshot_22.8.03~fehfix_amd64.buildinfo mx-snapshot_22.8.03~fehfix_amd64.changes
+ signfile changes mx-snapshot_22.8.03~fehfix_amd64.changes fehlix <fehlix@mxlinux.org>
 
 Successfully signed dsc, buildinfo, changes files

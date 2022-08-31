@@ -1,0 +1,52 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Wed, 31 Aug 2022 16:32:30 -0400
+Source: mx-snapshot
+Binary: mx-snapshot
+Architecture: source amd64
+Version: 22.8.03~fehfix
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: fehlix <fehlix@mxlinux.org>
+Description:
+ mx-snapshot - MX Snapshot
+Changes:
+ mx-snapshot (22.8.03~fehfix) mx; urgency=medium
+ .
+   * update hyper-v initrd modules
+Checksums-Sha1:
+ 10cdd8a55b5a3a3cff2381576e6e8f660345aed4 1584 mx-snapshot_22.8.03~fehfix.dsc
+ 3dbee2c14f46dcb4b076b4c55ee6cd7e4d336630 304108 mx-snapshot_22.8.03~fehfix.tar.xz
+ 654704d4494333e88b9ccdeb2242c0ce9e7c5641 11283 mx-snapshot_22.8.03~fehfix_amd64.buildinfo
+ 1c05420cbcafd03df44307f5e9bdaf2616d9313c 273152 mx-snapshot_22.8.03~fehfix_amd64.deb
+Checksums-Sha256:
+ ce094bf2afad685fed386bc4236530392510f7dfd1846b1621a3867f8dc524cf 1584 mx-snapshot_22.8.03~fehfix.dsc
+ 2048bc47e3bafb6a9585b399d9a886e5492a4335d68424ac237424bf2b8c578e 304108 mx-snapshot_22.8.03~fehfix.tar.xz
+ 5e452230c8b4da0a4e368fca7f12284aa85a692dc0fe15bd5b8d0a0f5aa75cbf 11283 mx-snapshot_22.8.03~fehfix_amd64.buildinfo
+ 40a470c7cc21b93f43b904dc7b5a7c942f27e38b029d9d5aa46c1cfa8b0ad0d5 273152 mx-snapshot_22.8.03~fehfix_amd64.deb
+Files:
+ ecb03534e5dbafc5e88ed9f792d7884a 1584 admin optional mx-snapshot_22.8.03~fehfix.dsc
+ c3599abf712b47174df7d609c6558d12 304108 admin optional mx-snapshot_22.8.03~fehfix.tar.xz
+ 1046989bf8187c3735e2458d563fddbf 11283 admin optional mx-snapshot_22.8.03~fehfix_amd64.buildinfo
+ d0df8462aa7d1463402b14f2d3908295 273152 admin optional mx-snapshot_22.8.03~fehfix_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQJHBAEBCgAxFiEEgRnC8/wKXRM2S0xLL1ePG6ydm+kFAmMPzt0THGZlaGxpeEBt
+eGxpbnV4Lm9yZwAKCRAvV48brJ2b6RiUD/98Db+8c4iccgAug/2HYieku8ipWFHt
+G3o/OqpCl+iQ2YRhhUl84oaDHV4APc2Q7PVW05wgTGWkgWJM6KeF0iQLthYTdqnW
+MyfU/X09qQy5SrJ01zO1mTf49EYpKEk1HcoDwRD82GOnfr42NeihYJPdvE+d39Rg
+YQfxiCZS8GQ2DNt5V2xojElwfXEp05KoIukrmqAVRe7B2EHJLiiiOlHgXIKcxQ8r
+XgrHpYkXmLpzf88FZ1/K6ElPKnymuM1ifnC5vtkn/StOt/v/qS30Yer7uStQGW3f
+HUSt/f/DKj6ByXJTJTRheWfuQHZabdZKRm0eAN1XFGEGI/b7Z08wEflaaxqS6E5O
+MFDsz345JhakNpIWvf7sgVZtVWGpYq6PaOqA9H40nkynur6DBDV+7ggknBhumLHm
+9vQkYwOB9dcs3WlE66CyBZOe4WVCVMlICVYFeFfdqKoNx2Pre1YIijE3DN5Rjc9P
+aNBcXmr5PpjhQnLtEVys3vNdbISyozzYbX6R7jX/vBzvQ/a1m3pTxETfTYbGqxGd
+/M1H9UfbmQQI+FIrxMQAFsTj13V69dKNVeWh0vY9aWqtGFNIThTRE0Z5y9ZCvEHv
+P0G+9MoZoL0eWzqXFtW1y+RwJr/kQrESLwDOo9JwEiUpFvnDIpZnQX3hOuxXQZtp
+BWeeaVipOwqhsw==
+=nChQ
+-----END PGP SIGNATURE-----
