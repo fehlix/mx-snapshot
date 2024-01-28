@@ -1,0 +1,56 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sun, 28 Jan 2024 09:01:56 -0500
+Source: mx-snapshot
+Binary: iso-snapshot-cli mx-snapshot
+Architecture: source amd64
+Version: 24.01.01
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: fehlix <fehlix@mxlinux.org>
+Description:
+ iso-snapshot-cli - ISO Snapshoti CLI
+ mx-snapshot - MX Snapshot
+Changes:
+ mx-snapshot (24.01.01) mx; urgency=medium
+ .
+   * Add device mapper modules to avoid Ventoy crashes
+Checksums-Sha1:
+ d3967edb6325c55cf583cd584d102aa8d4956b99 1624 mx-snapshot_24.01.01.dsc
+ 2be27c732a145a73c521ba98845e08ce9b6fe67b 489440 mx-snapshot_24.01.01.tar.xz
+ efb481a0530a4b4ab00dabbd66d2155cd7611352 267772 iso-snapshot-cli_24.01.01_amd64.deb
+ 8f3b6fbd68f689ed77500ea86b265dab013a4f5b 11823 mx-snapshot_24.01.01_amd64.buildinfo
+ 42bfcec081e4c874cd9b07d1da39b7ac9b6de1f5 306088 mx-snapshot_24.01.01_amd64.deb
+Checksums-Sha256:
+ 5d60ffde8f8dff3d242368b219b7f25fedb6610137a0cf75f3b7b4e58534a2ce 1624 mx-snapshot_24.01.01.dsc
+ d9bdacb492a8e322631ea9a8072c57274b48ea925736b23ccff9929115717605 489440 mx-snapshot_24.01.01.tar.xz
+ dedd17eaa2533c92adb0b2ac7426e18fd55a5b5eef303cd1015dfe2533a70a51 267772 iso-snapshot-cli_24.01.01_amd64.deb
+ 6f1ca44c29052a2013c547fc334852170dd9a59c91f83d1565f429897f7c7e8b 11823 mx-snapshot_24.01.01_amd64.buildinfo
+ edc883f23901a7dcadb5d41b2076486fd3a9d76095c09dfd3032dcc067a2f0da 306088 mx-snapshot_24.01.01_amd64.deb
+Files:
+ 5a51c071c514533367345bed72b5e407 1624 admin optional mx-snapshot_24.01.01.dsc
+ e618e48ea5868ccafc0d98387fd730a7 489440 admin optional mx-snapshot_24.01.01.tar.xz
+ 5692a83c3b00263056d9a6f7d3b08143 267772 admin optional iso-snapshot-cli_24.01.01_amd64.deb
+ 99abedaa0ab43d498553e8f845f864cc 11823 admin optional mx-snapshot_24.01.01_amd64.buildinfo
+ cda499409f078ea2b92fd66dccf91e83 306088 admin optional mx-snapshot_24.01.01_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQJHBAEBCgAxFiEEgRnC8/wKXRM2S0xLL1ePG6ydm+kFAmW2X0gTHGZlaGxpeEBt
+eGxpbnV4Lm9yZwAKCRAvV48brJ2b6dv4D/9el9ohowpvJE72RcMJzPkQb0VKH9/F
+IzkMmTnH6jhYBEr6kTk8hDngzEeDcU94/kV3k5mD/FZeJH1YtamJ1ebJ+OwDFupP
+N8f5uYP/bT0UuvIHZCotV2lvYF2/+kgwY6iOLaN9wVAQLYJ9SCS+2dfeFGV4O74h
+/8zJAIgy48oWizp2Iy7PPi0asIT1yqHjKXoWx9amHsLbfdpppJjzyXQhoZ94m8Md
+cKRky6mtPHSkj0ZHNnn6LrccyLRXjinNZu0fEuMC0ChPFFSrBShIHxvUIIILlw8b
+xPRinvFgMBcmSH1BtSsEe5Djzn9tGPSO9bJ6wWd3MXY3nzChrfm/+3zjNrJongP1
+bkdTNLBzqGLzBsctU2pqdDlrfAy/j7NCo2XgZ9AtMhfnsORb1ThPKehCjFUrTrCx
+7r2tDW514PTaTGTKUQUVZVHzqbmZL9R9sM7De7matYIyn775v8ogtjutx8sK7mdC
+6pQB+MRAHMrVGfUKO+SvUSflici7DNyXigoiXaNSNWJZEy25QwoXWzbHA/RteXe5
+Dc1Vl5HzjswiJIAK9s0BYz3EpJnLuE8zrtuGYsIs3XWRSfp9eRzeDGsBx4sk51mu
+uu5shP8J4EmTRT7WXpNsck5jx32rNUFy2zY92RqJhTbz6riQPDaHnEr9YBnHK8Kw
+XZRyHMvg5OjWKA==
+=9ptd
+-----END PGP SIGNATURE-----
